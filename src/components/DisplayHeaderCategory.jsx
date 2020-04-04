@@ -83,7 +83,7 @@ const HeaderCategories = props => {
       <Menu.Item
         name={t("nav.articlesbylocation")}
         id="articlesbylocation"
-        color={"burgundy"}
+        color={"red"}
         as={Link}
         to={{ pathname: "/articlesbylocation" }}
         onClick={() => dispatch({ type: "GOOGLE_MAP" })}
