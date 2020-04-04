@@ -90,6 +90,13 @@ const rootReducer = (state = initialState, action) => {
         ...action.payload
       };
 
+      case actionTypes.GOOGLE_MAP:
+      return {
+        ...state,
+        showMap: true,
+        showArticlesList: false,
+        singleArticle: undefined
+      };
     default:
       return state;
   }
